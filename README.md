@@ -30,20 +30,20 @@ Read the [contributing guide](CONTRIBUTING.md) if you know how to hack and make 
 If you are using Bash, you can link to this image from your `~/.bashrc`. Just add the following aliases to the end of the file:
  
 ```bash
-alias madheadImagemagick="docker run --rm -it -w=/src -v $(pwd):/src --user=$(id -u):$(id -g) madhead/imagemagick"
-alias magick="madheadImagemagick magick"
-alias magick-script="madheadImagemagick magick-script"
-alias animate="madheadImagemagick animate"
-alias compare="madheadImagemagick compare"
-alias composite="madheadImagemagick composite"
-alias conjure="madheadImagemagick conjure"
-alias convert="madheadImagemagick convert"
-alias display="madheadImagemagick display"
-alias identify="madheadImagemagick identify"
-alias import="madheadImagemagick import"
-alias mogrify="madheadImagemagick mogrify"
-alias montage="madheadImagemagick montage"
-alias stream="madheadImagemagick stream"
+alias dockerImagemagick="docker run --rm -it -w=/src -v $(pwd):/src --user=$(id -u):$(id -g) madhead/imagemagick"
+alias magick="dockerImagemagick magick"
+alias magick-script="dockerImagemagick magick-script"
+alias animate="dockerImagemagick animate"
+alias compare="dockerImagemagick compare"
+alias composite="dockerImagemagick composite"
+alias conjure="dockerImagemagick conjure"
+alias convert="dockerImagemagick convert"
+alias display="dockerImagemagick display"
+alias identify="dockerImagemagick identify"
+alias import="dockerImagemagick import"
+alias mogrify="dockerImagemagick mogrify"
+alias montage="dockerImagemagick montage"
+alias stream="dockerImagemagick stream"
 ```
 
 After running `source ~/.bashrc`, you can just use the [ImageMagick commands](https://imagemagick.org/script/command-line-tools.php) like this: `convert rose.jpg -resize 50% rose-smaller.jpg`.
